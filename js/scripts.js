@@ -3,8 +3,6 @@
 $(document).ready(function() {
   $("#formOne").submit(function(event) {
     var nameInput = $("input#name").val();
-
-
     var q1Input = $("select#q1").val();
     var q2Input = $("select#q2").val();
     var q3Input = $("select#q3").val();

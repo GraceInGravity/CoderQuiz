@@ -2,6 +2,10 @@
 
 $(document).ready(function() {
   $("#formOne").submit(function(event) {
+
+    event.preventDefault();
+
+    var decisionTrack = 0:
     var nameInput = $("input#name").val();
     var q1Input = $("select#q1").val();
     var q2Input = $("select#q2").val();
@@ -17,7 +21,6 @@ $(document).ready(function() {
     $(".q5").text(q1Input);
 
     $("#story").show();
-    event.preventDefault();
 
 
   });

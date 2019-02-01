@@ -67,34 +67,35 @@
               <div class="form-group">
                 <label for="q5">Are you an Anarchist?</label>
                 <select class="form-control" id="q5">
-                  <option value="true">Yes.</option>
-                  <option value="false">No.</option>
+                  <option value="1">Yes.</option>
+                  <option value="-1">No.</option>
                 </select>
               </div>
 
 
-<button type="submit" class="btn btn-primary btn-lg btn-block">Which Programming Path is Best for Me?</button>
+              <button type="submit" class="btn btn-primary btn-lg btn-block">Which Programming Path is Best for Me?</button>
               <!-- <button type="submit" class="btn">Am I hired?</button> -->
             </form>
           <!-- </div> -->
 
+          <div id="output">
+          </div>
+
           <div id="story1">
-            <div class="alert alert-success" role="alert">
-              <h4 class="alert-heading">Applicant Response</h4>
-              <p>Dear <span class="name"></span>, <br> <br>
-              &emsp;&emsp; We are dissapointed to tell you that you should not be a programmer at all! <span class="q1"></span> <span class="q2"></span><span class="q3"></span>
+            <p>Dear <span class="name"></span>, <br> <br>
+              &emsp;&emsp; <span class="endResult"></span>
               </p>
             </div>
           </div>
 
-          <div id="story">
+          <!-- <div id="story">
             <div class="alert alert-success" role="alert">
               <h4 class="alert-heading">Applicant Response</h4>
               <p>Dear <span class="name"></span>, <br> <br>
               &emsp;&emsp; We are dissapointed to tell you that you should not be a programmer at all! <span class="q1"></span> <span class="q2"></span><span class="q3"></span>
               </p>
             </div>
-          </div>
+          </div> -->
 
     </div>
   </div>

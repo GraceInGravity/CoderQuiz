@@ -1,30 +1,29 @@
 function result(q1Input, q2Input, q3Input, q4Input, q5Input){
   var scoreTotal = 0;
 
-  if (q1Input<==0) {
+  if (q1Input<=0) {
     return ("We are dissapointed to tell you that you should not be a programmer at all!")
   } else {
     scoreTotal = scoreTotal + q1Input;
   }
 
-  if (q5Input===true) {
-      return ("You really should study Ruby")
+  if (q5Input>=0) {
+      return ("You really should study Ruby");
   }
 
-  if (q2Input>==4) {
+  if (q2Input>=4) {
     return ("You would have fun in CSS and Design classes. These might be a great place for you to express your artistic side.")
   }
 
-  if (q4Input===3) {
+  if (q4Input==3) {
     return ("C# would be a great option for you. You could work where there are lots of resources and oportunities")
   }
 
-  if (q3Input>==3) {
+  if (q3Input>=3) {
     return("Try out Java. You would have fun making great apps and phone functions!")
   }
 
   return("How about trying out PHP? Lots of fast paced and diverse projects could be a great future for you, Coder!")
-
 }
 
 
@@ -33,7 +32,8 @@ function result(q1Input, q2Input, q3Input, q4Input, q5Input){
 
 $(document).ready(function() {
   $("#formOne").submit(function(event) {
-
+    $("#story1").show();
+    var name = $("#name").val();
     event.preventDefault();
 
     var decisionTrack = 0;
@@ -55,6 +55,10 @@ $(document).ready(function() {
     // Confused about where this should be.
 
     var printResult =  result(q1Input, q2Input, q3Input, q4Input, q5Input);
+    var output = $("#output");
+    $(".name").text(name);
+    $(".endResult").text(printResult);
+
     console.log(printResult);
   });
 
